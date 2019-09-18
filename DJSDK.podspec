@@ -10,7 +10,6 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://www.jianshu.com/u/276c4f13c37b"
   spec.requires_arc = true
 
-  spec.preserve_paths = 'Frameworks/DJContents.framework'
-  spec.framework = 'Foundation','CoreFoundation'
-  spec.ios.vendored_frameworks = 'Frameworks/DJContents.framework'
+  spec.preserve_paths = 'Frameworks/*.framework'
+  spec.ios.vendored_frameworks = 'Frameworks/*.framework'
 end
