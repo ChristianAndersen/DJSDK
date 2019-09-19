@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = DJSDK;
+			productName = DJSDK;
 		};
 		D6831D33F54AD52C075599297874291A /* CSFoundation */ = {
 			isa = PBXAggregateTarget;
@@ -24,11 +25,14 @@
 			dependencies = (
 			);
 			name = CSFoundation;
+			productName = CSFoundation;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		4B71F74CC9B9E0A7719E6F619C20FE96 /* Pods-CSCocoapodsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE18828EBFFB12F16C5AC7E26A2B586 /* Pods-CSCocoapodsDemo-dummy.m */; };
+		F3A471AD23342D580066988A /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A471AB23342D570066988A /* libssl.a */; };
+		F3A471AE23342D580066988A /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3A471AC23342D580066988A /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +58,15 @@
 		5651BADD14C9CD9E7525C987E5808077 /* CSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CSFoundation.framework; path = Frameworks/CSFoundation.framework; sourceTree = "<group>"; };
 		5F23805ECBCEB31A8275BCFBA551604C /* Pods-CSCocoapodsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSCocoapodsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		85218C3FC83CFB25D1D715C615A55152 /* Pods-CSCocoapodsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CSCocoapodsDemo-frameworks.sh"; sourceTree = "<group>"; };
-		8B875DAE4F8A57CDCFE98529D0228480 /* libPods-CSCocoapodsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CSCocoapodsDemo.a"; path = "libPods-CSCocoapodsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8B875DAE4F8A57CDCFE98529D0228480 /* libPods-CSCocoapodsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSCocoapodsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AAE18828EBFFB12F16C5AC7E26A2B586 /* Pods-CSCocoapodsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CSCocoapodsDemo-dummy.m"; sourceTree = "<group>"; };
 		B1720AE938F50E041575B809C3C1B41A /* Pods-CSCocoapodsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CSCocoapodsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		B7ADCAF682468BFCDB890ADCBD015C65 /* Pods-CSCocoapodsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CSCocoapodsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		BF7541EA252657B374D1A4C5783A2DD4 /* DJSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DJSDK.xcconfig; sourceTree = "<group>"; };
 		C8C7053862F00F3C9DF1BFB65F31CD16 /* CSFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSFoundation.xcconfig; sourceTree = "<group>"; };
+		F3A471AB23342D570066988A /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		F3A471AC23342D580066988A /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A471AE23342D580066988A /* libcrypto.a in Frameworks */,
+				F3A471AD23342D580066988A /* libssl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +88,6 @@
 				96C0358BAF463FACD7DC610180A0357B /* Frameworks */,
 				E3BDB818122434157397E0C4B5DEEDF6 /* Support Files */,
 			);
-			name = DJSDK;
 			path = DJSDK;
 			sourceTree = "<group>";
 		};
@@ -135,6 +142,8 @@
 		96C0358BAF463FACD7DC610180A0357B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3A471AC23342D580066988A /* libcrypto.a */,
+				F3A471AB23342D570066988A /* libssl.a */,
 				05A966437FC8DB3F10A3A044E72785A6 /* DJContents.framework */,
 			);
 			name = Frameworks;
@@ -181,7 +190,6 @@
 				CFC26F73D69422D218398BBFC0E8AAB4 /* Frameworks */,
 				30AF013809170F78B32A49555B66BD9F /* Support Files */,
 			);
-			name = CSFoundation;
 			path = CSFoundation;
 			sourceTree = "<group>";
 		};
@@ -332,6 +340,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DJSDK",
+				);
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -354,6 +366,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DJSDK",
+				);
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
