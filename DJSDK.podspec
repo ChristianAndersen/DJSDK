@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DJSDK'
-  spec.version      = '7.0.8'
+  spec.version      = '7.0.12'
   spec.platform     = :ios, '8.0'
   spec.license      = 'MIT'
   spec.summary      = 'A sdk for cocopods'
