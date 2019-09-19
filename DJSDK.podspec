@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DJSDK'
-  spec.version      = '7.0.7'
+  spec.version      = '7.0.8'
   spec.platform     = :ios, '8.0'
   spec.license      = 'MIT'
   spec.summary      = 'A sdk for cocopods'
@@ -12,5 +12,6 @@ Pod::Spec.new do |spec|
 
   spec.preserve_paths = 'Frameworks/DJContents.framework'
   spec.frameworks = 'Foundation','CoreFoundation'
+  spec.ios.vendored_libraries = 'libautoseal_64nossl.a','libautoseal_simu64nossl.a','libautoseal_simunossl.a','libautoseal_v7nossl.a'
   spec.vendored_frameworks = 'Frameworks/DJContents.framework'
 end
