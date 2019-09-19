@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://www.jianshu.com/u/276c4f13c37b"
   spec.requires_arc = true
 
-  spec.preserve_paths = 'Frameworks/DJContents.framework','Frameworks/libcrypto.a','Frameworks/libssl.a'
+  spec.preserve_paths = 'Frameworks/DJContents.framework'
   spec.frameworks = 'Foundation','CoreFoundation'
   spec.libraries = 'c++'
   spec.vendored_libraries = 'Frameworks/libautoseal_64.a','Frameworks/libautoseal_simu.a','Frameworks/libautoseal_simu64.a','Frameworks/libautoseal_v7.a'
