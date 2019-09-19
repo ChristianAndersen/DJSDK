@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.preserve_paths = 'Frameworks/DJContents.framework'
   spec.frameworks = 'Foundation','CoreFoundation'
   spec.libraries = 'c++'
-  spec.ios.vendored_libraries = 'Frameworks/libautoseal_64nossl.a','Frameworks/libautoseal_simu64nossl.a','Frameworks/libautoseal_simunossl.a','Frameworks/libautoseal_v7nossl.a','Frameworks/libcrypto.a','Frameworks/libssl.a'
+  spec.ios.vendored_libraries = 'Frameworks/libautoseal_64.a','Frameworks/libautoseal_simu.a','Frameworks/libautoseal_simu64.a','Frameworks/libautoseal_v7.a'
   spec.vendored_frameworks = 'Frameworks/DJContents.framework'
 end
