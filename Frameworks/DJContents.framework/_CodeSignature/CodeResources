@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/DJAreaView.h</key>
 		<data>
-		+WsC4ItHJcgaRNIYWsRsYrOSMI8=
+		iZYy+Ej5xslvxhUicLvNs/MZHus=
 		</data>
 		<key>Headers/DJBlockView.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/DJContentView.h</key>
 		<data>
-		4KO4WqIt7Z3kX921BCz+zj3EMzw=
+		zRdB+2yyyWP40Uo3YEBOwDzNsaM=
 		</data>
 		<key>Headers/DJContentViewDelegate.h</key>
 		<data>
-		tez6M/EcQFdk53BwG+aVHeuU8Ck=
+		66wiqF4dg9J9VUNNMxxR/IOlVuY=
 		</data>
 		<key>Headers/DJContents.h</key>
 		<data>
@@ -38,15 +38,15 @@
 		</data>
 		<key>Headers/DJSeparateAreaBlockView.h</key>
 		<data>
-		+o1MdHO+bqwvwjRl6Qct9iLgvPY=
+		s4x0lM24G/h9AgoNi60AKPxDWE8=
 		</data>
 		<key>Headers/DJSeparateBlockView.h</key>
 		<data>
-		4qnGT5IkCkm4jRupWbqFo812Qpw=
+		WYYF3ViJGtYXKg0BeerruuP5ONs=
 		</data>
 		<key>Headers/DJTextAreaBlockHandle.h</key>
 		<data>
-		Vbzn5vIJO5kQBaRnhEmuKrf14zo=
+		HhL2DJK5T3LP3H4ExfT0Of/lX0g=
 		</data>
 		<key>Headers/DJTextBlockHandle.h</key>
 		<data>
@@ -62,7 +62,20 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		n8N7Ul+X7nZkxUIomZ+c96x7d84=
+		EEx5rHT9JGR5/Z+lnyc8u3ZjJoY=
+		</data>
+		<key>en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>签章返回值.txt</key>
+		<data>
+		pby8jBWMGUxxr0uMFhPSgWKBOjM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -82,11 +95,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+WsC4ItHJcgaRNIYWsRsYrOSMI8=
+			iZYy+Ej5xslvxhUicLvNs/MZHus=
 			</data>
 			<key>hash2</key>
 			<data>
-			7Rs6s7JmCRdl1K3/M6cwCP1GlejW6AotlHnGeDIyE1o=
+			r4AD/NupENHJSWJVbGdR0isYPNrOMQ1Pf55GYk/AtLo=
 			</data>
 		</dict>
 		<key>Headers/DJBlockView.h</key>
@@ -115,22 +128,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4KO4WqIt7Z3kX921BCz+zj3EMzw=
+			zRdB+2yyyWP40Uo3YEBOwDzNsaM=
 			</data>
 			<key>hash2</key>
 			<data>
-			jvoM3XkXrB/mcV02Tiijr5a4Wnb9MOw9ZSXmkX46C88=
+			GRSXwP7OjWuxOeTBFd+YmvhIb1EH3Yi5P+NByXySFVo=
 			</data>
 		</dict>
 		<key>Headers/DJContentViewDelegate.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tez6M/EcQFdk53BwG+aVHeuU8Ck=
+			66wiqF4dg9J9VUNNMxxR/IOlVuY=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHvEivSU4AtrKbJnkzocJeVL2V7OXQEaIsqOzX8twZU=
+			OWehY1VlbG+A4UG/OoSOtHociubfnUYVKgp1QMBSASo=
 			</data>
 		</dict>
 		<key>Headers/DJContents.h</key>
@@ -159,33 +172,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+o1MdHO+bqwvwjRl6Qct9iLgvPY=
+			s4x0lM24G/h9AgoNi60AKPxDWE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			0S6VqyC23443MbwyptidgcmZpk4bSYTEwC/GwaQpGUI=
+			5NgZw2tSPQpncyICSCKc4WjAwS5a3bO8NJ8UYpxhSWY=
 			</data>
 		</dict>
 		<key>Headers/DJSeparateBlockView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4qnGT5IkCkm4jRupWbqFo812Qpw=
+			WYYF3ViJGtYXKg0BeerruuP5ONs=
 			</data>
 			<key>hash2</key>
 			<data>
-			4Jw6hRi9ztOIwGaiK8bCMNsdUWjgGBh0KGAjI7cwOU4=
+			07SGA9glDftkG8olbemKsqIEe+uzP2yYAwSuaEOBpxc=
 			</data>
 		</dict>
 		<key>Headers/DJTextAreaBlockHandle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vbzn5vIJO5kQBaRnhEmuKrf14zo=
+			HhL2DJK5T3LP3H4ExfT0Of/lX0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			DqRf/LKXAujRkVxJU4VK8/HNc4PFjIR16gWILr2H4xs=
+			ewsaljMAZ5sysHNN7B/wmTwH+25P0h+wS49FiBoWjrY=
 			</data>
 		</dict>
 		<key>Headers/DJTextBlockHandle.h</key>
@@ -219,6 +232,30 @@
 			<key>hash2</key>
 			<data>
 			0Un+ADIid5ByFA2nYkkBHJIfXwrwF77G2BLbCSTxVoI=
+			</data>
+		</dict>
+		<key>en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>hash2</key>
+			<data>
+			kmHsztpgjvF0JW5f3HdMHm49z1M0CcG8OT1JDQHHE/E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>签章返回值.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pby8jBWMGUxxr0uMFhPSgWKBOjM=
+			</data>
+			<key>hash2</key>
+			<data>
+			YmJUhmnxAuVPxYh6y3VN67fYlTUO27P9aB72Xo82w70=
 			</data>
 		</dict>
 	</dict>

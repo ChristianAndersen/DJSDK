@@ -13,7 +13,9 @@
 @interface DJSeparateBlockView : UIView
 
 @property (nonatomic,assign) int areaNum;
+
 @property (nonatomic,assign) float handSize;
+
 @property (nonatomic,assign) float handHeight;
 //提交的等待时间，小于0.5无效，需要手动提交
 @property (nonatomic,assign) double submitTimer;

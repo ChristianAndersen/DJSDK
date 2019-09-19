@@ -36,8 +36,9 @@ typedef NS_ENUM(int, DJContentAction)
     DJContentActionErase,
     DJContentActionSeal,
     DJContentActionOperation,
-    DJContentActionOperationDraw,
     DJContentActionCover,
+    DJContentActionOperationDraw,
+    DJContentActionVerification
 };
 
 typedef void(^OpenCompleteBlock)(int result);
@@ -75,9 +76,13 @@ typedef void(^OpenCompleteBlock)(int result);
  *@Des:第三版本初始化接口，在优化第二版本接口后，增加了文件页面绘制完成后的回调，用于客户自定义打开文件的动画设置
  *@param: filePath:文件路径，frame:控件坐标，complete:页面绘制完成后的回调
  */
+
 - (id)initWithFrame:(CGRect)frame pdfFilePath:(NSString*)filePath complete:(OpenCompleteBlock)completBlock;
+
 - (id)initWithFrame:(CGRect)frame pdfFileData:(NSData*)fileData complete:(OpenCompleteBlock)completBlock;
+
 - (id)initWithFrame:(CGRect)frame aipFilePath:(NSString*)filePath complete:(OpenCompleteBlock)completBlock;
+
 - (id)initWithFrame:(CGRect)frame aipFileData:(NSData*)fileData complete:(OpenCompleteBlock)completBlock;
 //合并文件
 - (int)mergeFile:(NSString*)filePath afterPage:(NSInteger)indexPage;
@@ -100,9 +105,9 @@ typedef void(^OpenCompleteBlock)(int result);
 //设置印章
 - (BOOL)setSealWithSealDataFilePath:(NSString*)filePath andSealFont:(float)sealFont;
 - (BOOL)setSealWithPNGImageFilePath:(NSString*)filePath andSealSize:(CGSize)sealSize;
-
 //delegate
 @property (nonatomic,weak) id<DJContentViewDelegate> contentViewDelegate;
+
 //view
 @property (nonatomic,assign) CGFloat contentZoomScale;
 @property (nonatomic,readonly) CGPoint contentOffSet;
@@ -120,10 +125,9 @@ typedef void(^OpenCompleteBlock)(int result);
 //property and operation of editing
 @property (nonatomic) DJContentAction currentAction;
 @property (nonatomic) UIColor* penColor;
+@property (nonatomic) float penWidth;
 @property (nonatomic) CGFloat penStyle;
 @property (nonatomic) CGSize cellSize;
-@property (nonatomic) float penWidth;
-
 
 //设置可移动手写框的笔迹粗细
 - (void)setDrawBlockPenWidth:(float)penWidth;
@@ -144,7 +148,6 @@ typedef void(^OpenCompleteBlock)(int result);
 @property (nonatomic,readonly) NSString* blocksString;
 @property (nonatomic,readonly) NSString* areaBlocksString;
 @property (nonatomic,readonly) NSString* postString;
-
 @property (nonatomic,readonly) NSString* postNoSealString;
 @property (nonatomic,readonly) NSString* postBase64String;
 //所有编辑上去的文字
@@ -155,6 +158,7 @@ typedef void(^OpenCompleteBlock)(int result);
 @property (nonatomic,readonly) NSDictionary* textStringList;
 //缓存意见
 @property (nonatomic,readonly) NSString* cacheString;
+
 @property (nonatomic,readonly) NSData *SHA1Data;
 
 /*
@@ -185,8 +189,11 @@ typedef void(^OpenCompleteBlock)(int result);
 
 //滑动任意页
 - (void)gotoPage:(NSInteger)page;
+
 - (void)scrollFileContentOffsetX:(float)offX;
+
 - (void)scrollFileContentOffsetY:(float)offY;
+
 - (void)addFooterHeight:(float)height;
 
 //Aip文件转换成Pdf
@@ -243,20 +250,24 @@ typedef void(^OpenCompleteBlock)(int result);
 
 //把外部签名数据合成进文件
 - (void)mergPDFDataWithSignature:(NSString*)signatureBase64;
+
 - (void)mergPDFDataWithSignData:(NSData*)signatureData;
+
 - (void)loadCacheString:(NSString*)cacheString;
-- (void)limitEditOnlyForUser;
+
 #pragma mark - 手写相关方法
-- (DJAreaView*)createAreaView:(CGRect)rect scale:(CGFloat)scale atPage:(int)pageNum;
-- (DJAreaView*)createAreaViewStartPercentOffset:(CGPoint)offset scale:(CGFloat)scale areaName:(NSString*)areaName atPage:(int)pageNum;
+
+//存在问题不可用
+- (DJAreaView*)createAreaView:(CGRect)rectInDocument atPage:(int)pageNum;
+
 - (DJAreaView*)createAreaViewWithPercentRect:(CGRect)rectInPercent atPage:(int)pageNum;
 /*
  *@Des:弹出框手写，全手写的缩放，不新建区域，只是把笔记缩放到文档
  *@param: rectInDocument:手写区域在文档上显示区域的大小，page:在哪个页面显示。
  *@return: 与区域对应的手写view
  */
-
 - (DJZoomView*)createZoomView:(CGRect)rectInDocument atPage:(int)pageNum;
+
 - (DJZoomView*)createZoomViewWithPercentRect:(CGRect)rectInPercent atPage:(int)pageNum;
 
 //把手写数据转成印章(筑龙所用)
@@ -328,7 +339,9 @@ typedef void(^OpenCompleteBlock)(int result);
 
 //根据下拉框名 设置下拉框选项
 - (void)setComboBoxWithOption:(int)option toAreaName:(NSString *)areaName;
+
 - (void)editTextAreaBlocksWithAttributedDictionary:(NSDictionary*)dic atPage:(NSInteger)pageNum;
+
 + (int)setAipValues:(NSString*)values toFilePath:(NSString*)filePath;
 
 /*
@@ -355,7 +368,6 @@ typedef void(^OpenCompleteBlock)(int result);
                                         font:(UIFont*)font;
 //删除文字节点
 - (void)removeTextBlock:(DJAreaIndexPath)areaIndexPath;
-- (void)removeTextAreaBlock:(NSString*)areaName;
 //删除新加手写节点
 - (void)removeDrawBlock:(DJSeparateBlockView*)view;
 //在指定页新建可以的文字区域
@@ -366,7 +378,6 @@ typedef void(^OpenCompleteBlock)(int result);
                  useUserName:(BOOL)useUserName
                    userImage:(BOOL)userImage
                         time:(NSString *)time;
-
 //在指定页新建可移动区域，坐标采用页面百分比
 - (void)addTextBlockWithtext:(NSString*)text
                       atPage:(int)pageNum
@@ -376,7 +387,8 @@ typedef void(^OpenCompleteBlock)(int result);
                    userImage:(BOOL)userImage
                         time:(NSString *)time;
 //编辑textBlock
-- (void)editTextBlock:(NSString*)text atPage:(int)pageNum withTime:(NSString*)time
+- (void)editTextBlockTextWithtext:(NSString*)text
+                           atPage:(int)pageNum
                     areaIndexPath:(DJAreaIndexPath)areaIndexPath;
 
 //编辑textBlock
@@ -443,6 +455,7 @@ typedef void(^OpenCompleteBlock)(int result);
  *IP:印章平台地址
  */
 - (void)login:(NSString*)userName userId:(NSString*)userId forServerIP:(NSString*)IP;
+
 //只需要对文字区域添加用户信息
 - (void)loginUserName:(NSString *)userName;
 

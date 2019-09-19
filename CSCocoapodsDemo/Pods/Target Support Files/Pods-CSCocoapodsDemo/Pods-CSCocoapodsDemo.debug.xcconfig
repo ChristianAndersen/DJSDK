@@ -1,4 +1,4 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/CSFoundation/Frameworks" "${PODS_ROOT}/DJSDK/Frameworks"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/CSFoundation/Frameworks" "${PODS_ROOT}/DJSDK/Frameworks" $(PODS_ROOT)/Frameworks
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -framework "CSFoundation" -framework "CoreFoundation" -framework "DJContents" -framework "Foundation"

@@ -257,7 +257,6 @@ typedef void(^OpenCompleteBlock)(int result);
  */
 
 - (DJZoomView*)createZoomView:(CGRect)rectInDocument atPage:(int)pageNum;
-
 - (DJZoomView*)createZoomViewWithPercentRect:(CGRect)rectInPercent atPage:(int)pageNum;
 
 //把手写数据转成印章(筑龙所用)
@@ -444,7 +443,6 @@ typedef void(^OpenCompleteBlock)(int result);
  *IP:印章平台地址
  */
 - (void)login:(NSString*)userName userId:(NSString*)userId forServerIP:(NSString*)IP;
-
 //只需要对文字区域添加用户信息
 - (void)loginUserName:(NSString *)userName;
 

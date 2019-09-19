@@ -32,7 +32,7 @@
 
 - (void)contentView:(DJContentView*)contentView handle:(DJTextBlockHandle*)handle point:(NSString*)point;
 
-- (void)contentView:(DJContentView*)contentView clicked:(NSString*)point indexPath:(NSIndexPath*)indexPath;
+-(void)contentView:(DJContentView*)contentView clicked:(NSString*)point indexPath:(NSIndexPath*)indexPath;
 
 //参数
 /*

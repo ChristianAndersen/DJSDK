@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/DJAreaView.h</key>
 		<data>
-		J/VpWXQUx6vZTdxPC4peH0ZFwEw=
+		+WsC4ItHJcgaRNIYWsRsYrOSMI8=
 		</data>
 		<key>Headers/DJBlockView.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/DJContentView.h</key>
 		<data>
-		kb/IvhM9PFKwX2xc4r5qK7wybCE=
+		4KO4WqIt7Z3kX921BCz+zj3EMzw=
 		</data>
 		<key>Headers/DJContentViewDelegate.h</key>
 		<data>
@@ -62,20 +62,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iBiCzQm6NgXNr2NnTRwI1CjqJc0=
-		</data>
-		<key>en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>签章返回值.txt</key>
-		<data>
-		pby8jBWMGUxxr0uMFhPSgWKBOjM=
+		n8N7Ul+X7nZkxUIomZ+c96x7d84=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -95,11 +82,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			J/VpWXQUx6vZTdxPC4peH0ZFwEw=
+			+WsC4ItHJcgaRNIYWsRsYrOSMI8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5pNYExegV4JTb4KQ+ThyvQYOUE2xyOSpef3AsviODzo=
+			7Rs6s7JmCRdl1K3/M6cwCP1GlejW6AotlHnGeDIyE1o=
 			</data>
 		</dict>
 		<key>Headers/DJBlockView.h</key>
@@ -128,11 +115,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kb/IvhM9PFKwX2xc4r5qK7wybCE=
+			4KO4WqIt7Z3kX921BCz+zj3EMzw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pHNqak5npcIsrG4CCbBMLkt5WUwgMOFabhJEYYSwrPE=
+			jvoM3XkXrB/mcV02Tiijr5a4Wnb9MOw9ZSXmkX46C88=
 			</data>
 		</dict>
 		<key>Headers/DJContentViewDelegate.h</key>
@@ -232,30 +219,6 @@
 			<key>hash2</key>
 			<data>
 			0Un+ADIid5ByFA2nYkkBHJIfXwrwF77G2BLbCSTxVoI=
-			</data>
-		</dict>
-		<key>en.lproj/InfoPlist.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zmV6UqBSo6r1NOz798vd5O4zTBA=
-			</data>
-			<key>hash2</key>
-			<data>
-			kmHsztpgjvF0JW5f3HdMHm49z1M0CcG8OT1JDQHHE/E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>签章返回值.txt</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			pby8jBWMGUxxr0uMFhPSgWKBOjM=
-			</data>
-			<key>hash2</key>
-			<data>
-			YmJUhmnxAuVPxYh6y3VN67fYlTUO27P9aB72Xo82w70=
 			</data>
 		</dict>
 	</dict>

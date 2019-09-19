@@ -23,9 +23,6 @@ typedef NS_ENUM(int, DJAreaExt)
 @interface DJTextAreaBlockHandle : NSObject
 
 @property (nonatomic,assign)DJAreaExt ext;
-@property (nonatomic,copy)NSString *text;
-@property (nonatomic,copy)NSString *areaName;
-@property (nonatomic,copy)NSString *userName;
 - (void)submitWithText:(NSString*)text;
 
 @end
