@@ -4,7 +4,7 @@ PODS:
 
 DEPENDENCIES:
   - CSFoundation (~> 0.0.3)
-  - DJSDK (~> 7.0.15)
+  - DJSDK (~> 7.0.8)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -15,6 +15,6 @@ SPEC CHECKSUMS:
   CSFoundation: f3d07b1855544f78f8231e323bcfc425f275ec04
   DJSDK: a4bb0c7df157c56656ab42281e129d5e6d643099
 
-PODFILE CHECKSUM: 50f7ebb0d171e38df7326618a452ad237684ab9f
+PODFILE CHECKSUM: 3b04191eaa29f8ef0752d186f01399c70ed317e4
 
 COCOAPODS: 1.7.5
