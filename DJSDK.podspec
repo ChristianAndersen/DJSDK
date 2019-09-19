@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'DJSDK'
-  spec.version      = '7.0.12'
+  spec.version      = '7.0.13'
   spec.platform     = :ios, '8.0'
   spec.license      = 'MIT'
   spec.summary      = 'A sdk for cocopods'
@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://www.jianshu.com/u/276c4f13c37b"
   spec.requires_arc = true
 
+  spec.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "$(PODS_ROOT)/Frameworks"}
   spec.preserve_paths = 'Frameworks/DJContents.framework'
   spec.frameworks = 'Foundation','CoreFoundation'
   spec.libraries = 'c++'
