@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <CSFoundation/CSFoundation.h>
+#import <DJContents/DJContentView.h>
 @interface ViewController ()
 
 @end
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"%@   %@",[CSFoundationMsg version],[CSFoundationMsg meassageInfo]);
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"2019面试题整理" ofType:@"pdf"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    DJContentView *view = [[DJContentView alloc]initWithFrame:[UIScreen mainScreen].bounds pdfFileData:data];
+    [self.view addSubview:view];
 }
 
 

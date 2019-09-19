@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F3ED9F3123322F1E00651949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3ED9F3023322F1E00651949 /* Assets.xcassets */; };
 		F3ED9F3423322F1E00651949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3ED9F3223322F1E00651949 /* LaunchScreen.storyboard */; };
 		F3ED9F3723322F1E00651949 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3ED9F3623322F1E00651949 /* main.m */; };
+		F3ED9F4A2333498900651949 /* 2019面试题整理.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F3ED9F492333498900651949 /* 2019面试题整理.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F3ED9F3323322F1E00651949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3ED9F3523322F1E00651949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3ED9F3623322F1E00651949 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3ED9F492333498900651949 /* 2019面试题整理.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "2019面试题整理.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,6 @@
 				1B24C64945137D69157E05D7 /* Pods-CSCocoapodsDemo.debug.xcconfig */,
 				26033478C9E14BE00FCC85FE /* Pods-CSCocoapodsDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,6 +88,7 @@
 				F3ED9F2823322F1D00651949 /* AppDelegate.m */,
 				F3ED9F2A23322F1D00651949 /* ViewController.h */,
 				F3ED9F2B23322F1D00651949 /* ViewController.m */,
+				F3ED9F492333498900651949 /* 2019面试题整理.pdf */,
 				F3ED9F2D23322F1D00651949 /* Main.storyboard */,
 				F3ED9F3023322F1E00651949 /* Assets.xcassets */,
 				F3ED9F3223322F1E00651949 /* LaunchScreen.storyboard */,
@@ -157,6 +159,7 @@
 			files = (
 				F3ED9F3423322F1E00651949 /* LaunchScreen.storyboard in Resources */,
 				F3ED9F3123322F1E00651949 /* Assets.xcassets in Resources */,
+				F3ED9F4A2333498900651949 /* 2019面试题整理.pdf in Resources */,
 				F3ED9F2F23322F1D00651949 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
