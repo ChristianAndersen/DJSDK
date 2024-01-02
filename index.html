@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Module Develop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<style type="text/css">
+	html,body{
+		height: 100%
+	}
+	body{
+		background-color: #fff;
+	    margin: 0;
+	}
+	#wrap{
+	    height: 100%;
+	    position: relative;
+	}
+	#header{
+		background-color: #5082c2;
+		height: 44px;
+	    position: relative;
+	}
+	#header h1{
+	    font-size: 20px; 
+	    height: 44px; 
+	    line-height: 44px; 
+	    margin: 0em; 
+	    color: #fff;
+		margin-left: 100px;
+		margin-right: 100px;
+		text-align: center;
+	}
+    #main{
+        display: block;
+    }
+    a.button{
+        display: -webkit-box;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        height: 36px;
+        margin: 8px;
+        background-color: rgba(240,240,240,1.0);
+        border-color: rgba(220,220,220,1.0);
+        border-width: 2px;
+        border-style: solid;
+	}
+    a.active{
+        background-color: rgba(240,240,240,0.6);
+	}
+</style>
+</head>
+<body>
+	<div id="wrap">
+	    <header id="header">
+	    	<h1 id="title">模块开发</h1>
+	    </header>
+	    <div id="main">
+            <a class="button" tapmode="active" onclick="openMainPage()">openMainPage</a>
+            <a class="button" tapmode="active" onclick="selectBluetooth()">selectBluetooth</a>
+            <a class="button" tapmode="active" onclick="goSeal()">goSeal</a>
+            <a class="button" tapmode="active" onclick="setSeal()">setSeal</a>
+            <a class="button" tapmode="active" onclick="doStrictSeal()">doStrictSeal</a>
+        </div>
+    </div>
+</body>
+<script>
+    function openMainPage(){
+        var mtlDianjuSeals = api.openWin({
+            name: 'page1',
+            url: 'http://47.104.176.183:8849/',
+            hideTopBar:false,
+            pageParam: {
+                name: 'test'
+            }
+        });
+    }
+    function selectBluetooth() {
+        var mtlDianjuSeals = api.require('mtlDianjuSeals');
+        mtlDianjuSeals.selectBluetooth({
+        },function(ret, err){
+            alert(JSON.stringify(ret));
+        });
+    }
+    function goSeal() {
+        var mtlDianjuSeals = api.require('mtlDianjuSeals');
+        mtlDianjuSeals.goSeal({
+            userId:9900,
+            officialId:62,
+            token:'fdca677bc6f84f1bb63167c618d6020d',
+            tenantId:'9',
+            baseUrl:'http://47.104.235.39:8084/prod-api/admin-api/',
+            bluetoothName:'BLE#0x609866ED625F',
+        },function(ret, err){
+            alert(JSON.stringify(ret));
+        });
+    }
+    function setSeal() {
+        var mtlDianjuSeals = api.require('mtlDianjuSeals');
+        mtlDianjuSeals.setSeal({
+            userId:123,
+            applicationId:123,
+            token:'',
+            tenantId:''
+        },function(ret, err){
+            alert(JSON.stringify(ret));
+        });
+    }
+    function doStrictSeal() {
+        var mtlDianjuSeals = api.require('mtlDianjuSeals');
+        mtlDianjuSeals.doStrictSeal({
+            baseUrl:'http://47.104.235.39:8084/prod-api/admin-api/',
+            channelName: '35857b00-8b6b-46b1-b50c-f1b6031dd69c',
+            creatTokenUserID:9900,
+            instrumentId:5,
+            instrumentName:'BLE#0x609866ED625F',
+            officialId: 63,
+            rtmToken:'007eJxTYHBPTmjz9j+Q9ao1NL/Imp91Xf0akXuRBjtU1vF/2yn1SFWBwcLQxNzI2CTZzDjVwsQ4MSnRyMIyNSk10dLE0CIxySh556/01IZARobnP0M2MjJAIIivwmBsamFqnmRgoGuRZJaka2KWZKibZGqQrJtmmGRmYGyYkmJmmczKYGhpbGQKACkaKHY=',
+            sealFlag:2,
+            tenantId:'9',
+            token:'af3b5be96df541009ba13dca3caa9085',
+            userId:19325
+        },function(ret, err){
+            alert(JSON.stringify(ret));
+        });
+    }
+</script>
+</html>
